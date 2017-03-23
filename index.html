@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="1.css">
+    <script src="1.js"></script>
+
+    <title>Minesweeper game</title>
+
+</head>
+<body>
+    <header class="center">
+        <h1 id='game-name'>Minesweeper game</h1>
+    </header>
+
+<main class="center">
+    <div class="content">
+        <div id='gamefield'></div>
+        <div class="scores">
+            <div class="timer">
+                <input type="checkbox" name="timer-pause" id="timer-pause">
+                <label class="btn" for="timer-pause"></label>
+                <div class="timer-time" id='clock'>0:00</div>
+            </div>
+            <div class="levelSelect">
+                <form id="level-select-form">
+                    <input type="radio" class="btn" name="level" id="level-easy" checked="checked">
+                    <label for="level-easy">Easy</label>
+                    <input type="radio" class="btn" name="level" id="level-normal">
+                    <label for="level-normal">Normal</label>
+                    <input type="radio" class="btn" name="level" id="level-hard">
+                    <label for="level-hard">Hard</label>
+                </form>
+            </div>
+            <ul id='score-board'>
+
+            </ul>
+        </div>
+    </div>
+</main>
+<div id="info">
+    beta
+    <br>
+    © 2017
+    <img src="druncrab.svg" height="15px">
+    <br>
+    Drunk-Crab-Code Studio
+    <br>
+</div>
+</body>
+</html>
