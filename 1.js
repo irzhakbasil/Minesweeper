@@ -216,7 +216,6 @@ window.onload = function() {
         isPlaying = false;
         activeButton.checked = null;
         showScores();
-        packmanCount = 0;
    }
 
    function gameOver(){
@@ -229,7 +228,6 @@ window.onload = function() {
         gameName.innerHTML = 'Game over';
         isPlaying = false;
         activeButton.checked = null;
-        packmanCount = 0;
    }
 
     function createArr(x) {
@@ -437,7 +435,7 @@ window.onload = function() {
     }
    }
 
-   function reduceArray(forreducing){                           //2d Array filter and reducer
+   function reduceArray(forreducing){                           //Array filter and reducer
         let reduced = Object.keys(forreducing.reduce((p,c) => (p[c] = true,p),{}));
         let tmpArr = [];
             for(let i in reduced) {
