@@ -412,11 +412,14 @@ window.onload = function() {
                }
             }
         }
+        
       for(let m in gamefield.childNodes){
           let node = gamefield.childNodes[m];
+          if(node.id === 'box2') {
+                  node.id = 'box'; node.className = 'no-mine';
+                }
           for(let j in tmpArr) {
               let k = tmpArr[j];
-              if(node.raw === k[0] && node.cell === k[1] && node.id === 'box2') {node.id = 'box'; node.className = 'no-mine'}
               if(node.raw === k[0] && node.cell === k[1] && node.className !== 'mine boom'){node.id = 'box'; node.className = 'mine';}
           }
        }
