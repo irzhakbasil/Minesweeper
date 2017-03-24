@@ -416,6 +416,7 @@ window.onload = function() {
           let node = gamefield.childNodes[m];
           for(let j in tmpArr) {
               let k = tmpArr[j];
+              if(node.raw === k[0] && node.cell === k[1] && node.id === 'box2') {node.id = 'box'; node.className = 'no-mine'}
               if(node.raw === k[0] && node.cell === k[1] && node.className !== 'mine boom'){node.id = 'box'; node.className = 'mine';}
           }
        }
@@ -456,16 +457,16 @@ window.onload = function() {
         for (let i = 0; i < 23; i++){
             let store = reduceArray(tmpArr);
             tmpArr = store;
-        for(let i in tmpArr) {
-            let djek = tmpArr[i];
-            ex = djek[0];
-            yt = djek[1];
-            if(arr[ex][yt]=== ' ') {
-                checked.push(djek);
-                let z = scanBox(ex, yt);
-                for(let u in z) ad.push(z[u]);
+            for(let i in tmpArr) {
+                let djek = tmpArr[i];
+                ex = djek[0];
+                yt = djek[1];
+                if(arr[ex][yt]=== ' ') {
+                    checked.push(djek);
+                    let z = scanBox(ex, yt);
+                    for(let u in z) ad.push(z[u]);
+                }
             }
-        }
             for(let l in checked) ad.push(checked[l]);
             tmpArr = ad;
             ad=[];

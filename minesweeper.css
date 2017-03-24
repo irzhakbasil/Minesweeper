@@ -119,6 +119,15 @@ header {
         -webkit-background-size: 12px;
         background-size: 12px;
     }
+    .no-mine {
+        font-size: 0;
+        color: transparent;
+        background-image: url(no_mine.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-background-size: 12px;
+        background-size: 12px;
+    }
     .mine.boom {
         background-color: #f00000 !important;
     }
