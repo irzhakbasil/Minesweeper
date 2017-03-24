@@ -1,1 +1,1 @@
-Thank to Keymaster (http://keymasterr.com/) for the great help with design and CSS.
+Thank to Roman Kliuchkovych (http://keymasterr.com/) for the great help with design and CSS.
